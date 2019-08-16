@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Links from "./links.jsx";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function SideBar() {
   const [show, setShow] = useState(false);
@@ -12,16 +12,20 @@ function SideBar() {
 
   return (
     <>
-      <Button variant="link" id="side_bar_button" onClick={handleShow}>
-        <FontAwesomeIcon icon={faBars} />
+      <Button
+        id="side_bar_button"
+        variant="link"
+        className="col-1"
+        onClick={handleShow}
+      >
+        <FontAwesomeIcon id="search_icon" icon={faBars} />
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton />
         <Modal.Body>
           <Links />
         </Modal.Body>
-        <Modal.Footer />
       </Modal>
     </>
   );

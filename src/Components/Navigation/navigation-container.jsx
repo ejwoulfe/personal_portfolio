@@ -2,23 +2,53 @@ import React, { Component } from "react";
 import Logo from "./logo.jsx";
 import Links from "./links.jsx";
 import SideBar from "./side-bar";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Button } from "react-bootstrap";
 import "./navigation.scss";
 
 class NavigationContainer extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <div id="navigation_container">
-          <Navbar className="col-12">
-            <SideBar id="side_bar_button" variant="link" className="col-1" />
+  constructor(props) {
+    super(props);
+    this.state = { width: window.innerWidth };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
 
-            <Logo />
-            <Links />
-          </Navbar>
-        </div>
-      </React.Fragment>
-    );
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth });
+  }
+
+  render() {
+    if (this.state.width < 830) {
+      return (
+        <React.Fragment>
+          <div id="navigation_container">
+            <Navbar className="col-12">
+              <SideBar />
+              <Logo />
+            </Navbar>
+          </div>
+        </React.Fragment>
+      );
+    } else {
+      return (
+        <React.Fragment>
+          <div id="navigation_container">
+            <Navbar className="col-12">
+              <Logo />
+              <Links />
+            </Navbar>
+          </div>
+        </React.Fragment>
+      );
+    }
   }
 }
 

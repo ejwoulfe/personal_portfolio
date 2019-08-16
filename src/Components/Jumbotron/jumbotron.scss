@@ -1,0 +1,11 @@
+#jumbotron_container {
+  height: 600px;
+  background-image: url("../../Assets/fall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  #overlay {
+    background-color: rgba($color: #000000, $alpha: 0.32);
+    height: 100%;
+  }
+}
