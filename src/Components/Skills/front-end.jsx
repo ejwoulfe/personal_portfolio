@@ -1,4 +1,13 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faSass,
+  faReact,
+  faBootstrap
+} from "@fortawesome/free-brands-svg-icons";
 
 class FrontEnd extends Component {
   state = {
@@ -9,13 +18,38 @@ class FrontEnd extends Component {
       "Sass",
       "ReactJS",
       "Bootstrap"
+    ],
+    frontEndIcons: [
+      <FontAwesomeIcon icon={faHtml5} size="2x" style={{ color: "#E34F26" }} />,
+      <FontAwesomeIcon
+        icon={faCss3Alt}
+        size="2x"
+        style={{ color: "#205FAA" }}
+      />,
+      <FontAwesomeIcon
+        icon={faJsSquare}
+        size="2x"
+        style={{ color: "#EFD91E" }}
+      />,
+      <FontAwesomeIcon icon={faSass} size="2x" style={{ color: "#CE679B" }} />,
+      <FontAwesomeIcon icon={faReact} size="2x" style={{ color: "#50D5EF" }} />,
+      <FontAwesomeIcon
+        icon={faBootstrap}
+        size="2x"
+        style={{ color: "#633E91" }}
+      />
     ]
   };
 
   render() {
-    const listOfLanguages = this.state.frontEndLanguages.map(language => (
-      <li key={language}>{language}</li>
-    ));
+    const listOfLanguages = this.state.frontEndLanguages.map(
+      (language, index) => (
+        <span>
+          {this.state.frontEndIcons[index]}
+          <li key={language}>{language}</li>
+        </span>
+      )
+    );
     return (
       <div
         id="front_end_container"
