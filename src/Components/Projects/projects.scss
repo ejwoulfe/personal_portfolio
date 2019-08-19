@@ -1,0 +1,19 @@
+#projects_container {
+  padding-top: 40px;
+  text-align: center;
+  height: 300px;
+  .project_rows {
+    height: 300px;
+    flex-wrap: nowrap;
+  }
+  // Right Arrow
+  //   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+  // Left Arrow
+  // clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+@media (max-width: 991.98px) {
+  .filler_col {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Title() {
+function TitleAndLinks() {
   return (
     <div id="title_container">
       <h1>Javascript Engineer</h1>
@@ -42,4 +42,4 @@ function Title() {
     </div>
   );
 }
-export default Title;
+export default TitleAndLinks;
