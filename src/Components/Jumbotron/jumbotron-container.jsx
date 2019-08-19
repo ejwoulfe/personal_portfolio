@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./jumbotron.scss";
+import Title from "./title";
 import NavigationBar from "../Navigation/navigation-container";
 
 class JumbotronContainer extends Component {
@@ -9,6 +10,7 @@ class JumbotronContainer extends Component {
       <div id="jumbotron_container">
         <div id="overlay">
           <NavigationBar />
+          <Title />
         </div>
       </div>
     );

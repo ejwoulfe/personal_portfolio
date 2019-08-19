@@ -1,0 +1,17 @@
+#skills_container {
+  text-align: center;
+  padding-top: 55px;
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .language_container {
+    margin: auto;
+    h3 {
+      padding-bottom: 20px;
+    }
+  }
+}

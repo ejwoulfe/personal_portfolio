@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Logo from "./logo.jsx";
 import Links from "./links.jsx";
 import SideBar from "./side-bar";
-import { Navbar, Button } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import "./navigation.scss";
 
 class NavigationContainer extends Component {
