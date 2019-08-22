@@ -10,8 +10,8 @@ class SkillsContainer extends Component {
   render() {
     return (
       <div id="skills_container">
-        <h1 style={{ paddingBottom: "40px" }}>Skills</h1>
-        <Row>
+        <h1>Skills</h1>
+        <Row id="skills_row">
           <FrontEnd />
           <BackEnd />
           <Other />

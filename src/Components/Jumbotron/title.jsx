@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function TitleAndLinks() {
   return (
     <div id="title_container">
-      <h1>Javascript Engineer</h1>
+      <h1>Web Developer</h1>
       <div id="code_links_container">
         <span>
           <a

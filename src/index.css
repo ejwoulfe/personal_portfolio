@@ -5,6 +5,12 @@ html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #111820;
+  color: #b2123b;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .App {
   max-width: 1920px;

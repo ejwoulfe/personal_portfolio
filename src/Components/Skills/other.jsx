@@ -16,7 +16,7 @@ class Other extends Component {
       <FontAwesomeIcon
         icon={faGithubSquare}
         size="2x"
-        style={{ color: "#000000" }}
+        style={{ color: "#2d2e2e" }}
       />,
       <FontAwesomeIcon
         icon={faGitlab}
@@ -41,7 +41,7 @@ class Other extends Component {
         id="others_container"
         className="language_container col-xs-12 col-md-6 col-lg-4"
       >
-        <h3>Tools</h3>
+        <h2>Tools</h2>
         <ul>{listOfLanguages}</ul>
       </div>
     );

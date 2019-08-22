@@ -55,7 +55,7 @@ class FrontEnd extends Component {
         id="front_end_container"
         className="language_container col-xs-12 col-md-6 col-lg-4"
       >
-        <h3>Front End</h3>
+        <h2>Front End</h2>
         <ul>{listOfLanguages}</ul>
       </div>
     );

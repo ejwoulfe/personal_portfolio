@@ -1,16 +1,47 @@
 #projects_container {
   padding-top: 40px;
   text-align: center;
-  height: 300px;
-  .project_rows {
-    height: 300px;
-    flex-wrap: nowrap;
+  height: auto;
+  h1 {
+    padding-bottom: 50px;
   }
-  // Right Arrow
-  //   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  .project_rows {
+    border: 3px solid #030303d3;
 
-  // Left Arrow
-  // clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    margin-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 250px;
+
+    .btn {
+      background-color: #b2123b;
+      border-color: #b2123b;
+      &:hover {
+        background-color: #991133;
+      }
+    }
+  }
+
+  #bdo_profit_link {
+    width: 480px;
+    height: 270px;
+    background: url("../../Assets/bdoprofitstatic.jpg");
+    background-repeat: no-repeat;
+    &:hover {
+      background: url("../../Assets/bdoprofit.gif");
+      background-repeat: no-repeat;
+    }
+  }
+  #lol_champions_link {
+    width: 480px;
+    height: 270px;
+    background: url("../../Assets/lolchampionsstatic.jpg");
+    background-repeat: no-repeat;
+    &:hover {
+      background: url("../../Assets/lolchampions.gif");
+      background-repeat: no-repeat;
+    }
+  }
 }
 @media (max-width: 991.98px) {
   .filler_col {
