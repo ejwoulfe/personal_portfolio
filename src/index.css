@@ -7,6 +7,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   background-color: #111820;
   color: #b2123b;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .row {
   margin-left: 0px;

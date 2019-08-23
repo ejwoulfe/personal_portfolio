@@ -13,8 +13,8 @@ class PersonalPortfoioProject extends Component {
             <div id="third_project_description" className="col-lg-4 col-xs-6">
               <h4>Personal Portfolio</h4>
               <p>Personal</p>
-              <Button>Code</Button>
-              <Button>Live Website</Button>
+              <Button className="code_button">Code</Button>
+              <Button className="website_button">Live Website</Button>
             </div>
             <div id="personal_portfolio_link" className="col-lg-4 col-xs-6">
               <img src="" alt="Personal Portfolio website" />
