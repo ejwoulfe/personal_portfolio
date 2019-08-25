@@ -3,8 +3,9 @@ import "./projects.scss";
 import LolChampionsProject from "./lol-champions";
 import BdoProfitProject from "./bdo-profit";
 import PersonalPortfoioProject from "./personal-portfolio";
-import lolchampionsStatic from "../../Assets/lolchampionsstatic.jpg";
-import bdoprofitStatic from "../../Assets/bdoprofitstatic.jpg";
+import lolchampionsStatic from "../../Assets/lol_champions_static.jpg";
+import bdoprofitStatic from "../../Assets/bdo_profit_static.jpg";
+import personalPortfolioStatic from "../../Assets/personal_portfolio_static.jpg";
 
 class ProjectsContainer extends Component {
   state = {
@@ -41,7 +42,7 @@ class ProjectsContainer extends Component {
         title: "Personal Portfolio",
         liveLink: "http://edwoulfe.com",
         codeLink: "https://github.com/ejwoulfe/personal_portfolio",
-        image: "",
+        image: personalPortfolioStatic,
         description: "Personal Website to display all my projects and links.",
         languages: ["ReactJS", "React-Router", "Bootstrap", "Sass"]
       }

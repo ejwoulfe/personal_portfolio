@@ -10,7 +10,7 @@ class BdoProfitProject extends Component {
       return <li>{language}</li>;
     });
     return (
-      <Fade left>
+      <Fade right>
         <React.Fragment>
           <Row className="project_rows" id="bdoprofit_row">
             <div className="col-2 filler_col" />
@@ -44,7 +44,10 @@ class BdoProfitProject extends Component {
               </div>
             </div>
             <div className="col-lg-4 col-xs-6 image_col">
-              <p>Hover over the image to get a brief glimpse of the website.</p>
+              <p>
+                <b>Hover</b> over the image to get a brief glimpse of the
+                website.
+              </p>
               <FontAwesomeIcon
                 icon={faArrowDown}
                 className="arrow_down"
@@ -52,12 +55,13 @@ class BdoProfitProject extends Component {
               />
               <div
                 id="bdo_profit_image"
+                className="website_image_container"
                 style={{
                   backgroundImage: `url(${this.props.project.image})`,
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   margin: "auto",
-                  width: "100%",
+                  width: "480px",
                   height: "270px"
                 }}
               />

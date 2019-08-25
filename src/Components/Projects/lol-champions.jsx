@@ -10,7 +10,7 @@ class LolChampionsProject extends Component {
       return <li>{language}</li>;
     });
     return (
-      <Fade right>
+      <Fade left>
         <React.Fragment>
           <Row className="project_rows" id="lol_champions_row">
             <div className="col-2 filler_col" />
@@ -45,7 +45,10 @@ class LolChampionsProject extends Component {
               </div>
             </div>
             <div className="col-lg-4 col-xs-6 image_col">
-              <p>Hover over the image to get a brief glimpse of the website.</p>
+              <p>
+                <b>Hover</b> over the image to get a brief glimpse of the
+                website.
+              </p>
               <FontAwesomeIcon
                 icon={faArrowDown}
                 className="arrow_down"
@@ -58,9 +61,10 @@ class LolChampionsProject extends Component {
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   margin: "auto",
-                  width: "100%",
+                  width: "480px",
                   height: "270px"
                 }}
+                className="website_image_container"
               />
             </div>
             <div className="col-2 filler_col" />
