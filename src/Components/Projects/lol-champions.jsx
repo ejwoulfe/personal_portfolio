@@ -1,40 +1,47 @@
 import React, { Component } from "react";
-import { Row, Button } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 class LolChampionsProject extends Component {
-  state = {};
   render() {
+    const builtWithList = this.props.project.languages.map(language => {
+      return <li>{language}</li>;
+    });
     return (
       <Fade right>
         <React.Fragment>
           <Row className="project_rows" id="lol_champions_row">
             <div className="col-2 filler_col" />
             <div id="first_project_description" className="col-lg-4 col-xs-6">
-              <h4>LoL Champions</h4>
-              <p>
-                This website displays data on the games champions. This data
-                consists of the champions stats, abilities, and skins. All taken
-                from the offical Riot API.
-              </p>
-              <p>
-                Other data retrieved from the API include: which champions are
-                free to play this week and which champions are being played the
-                most in a given ranked tier.
-              </p>
-
-              <Button className="code_button">Code</Button>
-              <Button className="website_button">Live Website</Button>
+              <h4>{this.props.project.title}</h4>
+              <div className="description_container">
+                <p>{this.props.project.description1}</p>
+                <p>{this.props.project.description2}</p>
+              </div>
+              <div id="buttons_container">
+                <a
+                  href={this.props.project.codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  Code
+                </a>
+                <a
+                  className="btn"
+                  href={this.props.project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Website
+                </a>
+              </div>
 
               <div className="tech_stack">
-                <ul>
-                  <li>ReactJS</li>
-                  <li>APIs</li>
-                  <li>Bootstrap</li>
-                  <li>Sass</li>
-                </ul>
+                <h5>Built with:</h5>
+                <ul>{builtWithList}</ul>
               </div>
             </div>
             <div className="col-lg-4 col-xs-6 image_col">
@@ -44,7 +51,17 @@ class LolChampionsProject extends Component {
                 className="arrow_down"
                 size="lg"
               />
-              <div id="lol_champions_link" />
+              <div
+                id="lol_champions_image"
+                style={{
+                  backgroundImage: `url(${this.props.project.image})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  margin: "auto",
+                  width: "100%",
+                  height: "270px"
+                }}
+              />
             </div>
             <div className="col-2 filler_col" />
           </Row>
