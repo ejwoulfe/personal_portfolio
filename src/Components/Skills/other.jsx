@@ -31,7 +31,7 @@ class Other extends Component {
 
   render() {
     const listOfLanguages = this.state.others.map((language, index) => (
-      <span>
+      <span key={index}>
         {this.state.otherIcons[index]}
         <li key={language}>{language}</li>
       </span>

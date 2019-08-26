@@ -7,7 +7,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 class BdoProfitProject extends Component {
   render() {
     const builtWithList = this.props.project.languages.map(language => {
-      return <li>{language}</li>;
+      return <li key={language}>{language}</li>;
     });
     return (
       <Fade right>
@@ -15,7 +15,7 @@ class BdoProfitProject extends Component {
           <Row className="project_rows" id="bdoprofit_row">
             <div className="col-2 filler_col" />
 
-            <div id="second_project_description" className="col-lg-4 col-xs-6">
+            <div id="second_project_description" className="col-lg-4 col-sm-12">
               <h4>{this.props.project.title}</h4>
               <div className="description_container">
                 <p>{this.props.project.description}</p>
@@ -43,7 +43,7 @@ class BdoProfitProject extends Component {
                 <ul>{builtWithList}</ul>
               </div>
             </div>
-            <div className="col-lg-4 col-xs-6 image_col">
+            <div className="col-lg-4 col-sm-12 image_col">
               <p>
                 <b>Hover</b> over the image to get a brief glimpse of the
                 website.

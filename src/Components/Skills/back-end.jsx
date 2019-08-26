@@ -25,7 +25,7 @@ class BackEnd extends Component {
   render() {
     const listOfLanguages = this.state.backEndLanguages.map(
       (language, index) => (
-        <span>
+        <span key={index}>
           {this.state.backEndIcons[index]}
           <li key={language}>{language}</li>
         </span>

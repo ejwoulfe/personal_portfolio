@@ -44,7 +44,7 @@ class FrontEnd extends Component {
   render() {
     const listOfLanguages = this.state.frontEndLanguages.map(
       (language, index) => (
-        <span>
+        <span key={index}>
           {this.state.frontEndIcons[index]}
           <li key={language}>{language}</li>
         </span>

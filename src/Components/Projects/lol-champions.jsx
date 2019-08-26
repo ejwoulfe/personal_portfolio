@@ -7,7 +7,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 class LolChampionsProject extends Component {
   render() {
     const builtWithList = this.props.project.languages.map(language => {
-      return <li>{language}</li>;
+      return <li key={language}>{language}</li>;
     });
     return (
       <Fade left>

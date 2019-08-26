@@ -36,7 +36,7 @@ class ProjectsContainer extends Component {
           "This website displays data on the games champions. This data consists of the champions stats, abilities, and skins. All taken from the offical Riot API.",
         description2:
           " Other data retrieved from the API include: which champions are free to play this week and which champions are being played the most in a given ranked tier.",
-        languages: ["ReactJS", "APIs", "Bootstrap", "Sass"]
+        languages: ["ReactJS", "React-Router", "APIs", "Bootstrap", "Sass"]
       },
       personalPortfolio: {
         title: "Personal Portfolio",
@@ -44,7 +44,7 @@ class ProjectsContainer extends Component {
         codeLink: "https://github.com/ejwoulfe/personal_portfolio",
         image: personalPortfolioStatic,
         description: "Personal Website to display all my projects and links.",
-        languages: ["ReactJS", "React-Router", "Bootstrap", "Sass"]
+        languages: ["ReactJS", "Bootstrap", "Sass"]
       }
     }
   };
