@@ -1,9 +1,26 @@
+#skills_row {
+  padding-top: 60px;
+}
+#front_end_container {
+  border-right: 2px solid rgba(0, 0, 0, 0.219);
+}
+#back_end_container {
+  border-right: 2px solid rgba(0, 0, 0, 0.219);
+}
 #skills_container {
   text-align: center;
   padding-top: 55px;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+
+  h1 {
+    padding-bottom: 20px;
+  }
   ul {
     list-style-type: none;
     padding-left: 0px;
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

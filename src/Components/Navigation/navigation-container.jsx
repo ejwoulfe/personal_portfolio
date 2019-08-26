@@ -29,7 +29,7 @@ class NavigationContainer extends Component {
     if (this.state.width < 830) {
       return (
         <React.Fragment>
-          <div id="navigation_container">
+          <div id="navigation_container" sticky="top">
             <Navbar className="col-12">
               <SideBar />
               <Logo />
@@ -41,7 +41,7 @@ class NavigationContainer extends Component {
       return (
         <React.Fragment>
           <div id="navigation_container">
-            <Navbar className="col-12">
+            <Navbar className="col-12" sticky="top">
               <Logo />
               <Links />
             </Navbar>
