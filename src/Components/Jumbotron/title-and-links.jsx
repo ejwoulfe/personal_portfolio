@@ -2,6 +2,7 @@ import React from "react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ChangeColorTheme from "./change-color-button";
 
 function TitleAndLinks() {
   return (
@@ -39,6 +40,7 @@ function TitleAndLinks() {
           <h5>Resume</h5>
         </span>
       </div>
+      <ChangeColorTheme />
     </div>
   );
 }
