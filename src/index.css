@@ -9,6 +9,19 @@ html {
   padding: 0;
   width: 100%;
 }
+p,
+a,
+li,
+#change_theme_button {
+  font-family: "Amaranth", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Exo", sans-serif;
+}
 .row {
   margin-left: 0px;
   margin-right: 0px;
