@@ -22,6 +22,9 @@ h4,
 h5 {
   font-family: "Exo", sans-serif;
 }
+.heading_title {
+  font-size: 4rem;
+}
 .row {
   margin-left: 0px;
   margin-right: 0px;

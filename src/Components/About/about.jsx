@@ -6,9 +6,6 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="about_title">
-          <h1>About Me</h1>
-        </div>
         <div id="about_description">
           <p>
             My name is Ed Woulfe. I am a recent college graduation with a degree
@@ -21,6 +18,10 @@ class About extends Component {
           <p>
             I am excited to keep learning more, improving my skills and working
             with others to make respectable and beautiful websites.
+          </p>
+          <p>
+            All contact information can be found on my resume. A link is
+            provided at the top of the page. Thank you!
           </p>
         </div>
       </React.Fragment>

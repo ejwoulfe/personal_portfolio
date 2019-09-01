@@ -6,11 +6,10 @@ import BackEnd from "./back-end";
 import Other from "./other";
 
 class SkillsContainer extends Component {
-  state = {};
   render() {
     return (
       <div id="skills_container">
-        <h1>Skills</h1>
+        <h1 className="heading_title">Skills</h1>
         <Row id="skills_row">
           <FrontEnd />
           <BackEnd />
