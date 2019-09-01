@@ -5,11 +5,25 @@ html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #111820;
-  color: #b2123b;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+p,
+a,
+li,
+#change_theme_button {
+  font-family: "Amaranth", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Exo", sans-serif;
+}
+.heading_title {
+  font-size: 4rem;
 }
 .row {
   margin-left: 0px;

@@ -51,7 +51,7 @@ class ProjectsContainer extends Component {
   render() {
     return (
       <div id="projects_container">
-        <h1>Projects</h1>
+        <h1 className="heading_title">Projects</h1>
         <LolChampionsProject project={this.state.projects.lolChampions} />
         <BdoProfitProject project={this.state.projects.bdoProfit} />
         <PersonalPortfoioProject

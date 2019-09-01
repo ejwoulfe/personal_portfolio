@@ -10,8 +10,8 @@ class Links extends Component {
       behavior: "smooth"
     });
   }
-  contactClicked() {
-    document.getElementById("contact_container").scrollIntoView({
+  aboutClicked() {
+    document.getElementById("about_container").scrollIntoView({
       behavior: "smooth"
     });
   }
@@ -25,8 +25,8 @@ class Links extends Component {
           <li id="projects_link" onClick={this.projectsClicked}>
             Projects
           </li>
-          <li id="contact_link" onClick={this.contactClicked}>
-            Contact
+          <li id="about_link" onClick={this.aboutClicked}>
+            About
           </li>
         </ul>
       </div>
