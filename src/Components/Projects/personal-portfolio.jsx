@@ -9,6 +9,9 @@ class PersonalPortfolioProject extends Component {
     const builtWithList = this.props.project.languages.map(language => {
       return <li key={language}>{language}</li>;
     });
+    const description = this.props.project.description.map(paragraph => {
+      return <p key={paragraph}>{paragraph}</p>;
+    });
     return (
       <Fade left>
         <React.Fragment>
@@ -16,9 +19,7 @@ class PersonalPortfolioProject extends Component {
             <div className="col-2 filler_col" />
             <div id="third_project_description" className="col-lg-4 col-xs-6">
               <h4>{this.props.project.title}</h4>
-              <div className="description_container">
-                <p>{this.props.project.description}</p>
-              </div>
+              <div className="description_container">{description}</div>
               <div id="buttons_container">
                 <a
                   href={this.props.project.codeLink}

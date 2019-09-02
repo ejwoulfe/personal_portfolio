@@ -12,8 +12,9 @@ class About extends Component {
             in Computer Science.
           </p>
           <p>
-            During my studies I found my passion for web development. Since then
-            I have been constantly learning about the web and the skills needed.
+            During my studies I discovered my passion for web development. Ever
+            since, I have been studying and practicing in order to expand my web
+            dev skills and knowledge.
           </p>
           <p>
             I am excited to keep learning more, improving my skills and working

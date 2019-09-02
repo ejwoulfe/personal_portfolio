@@ -4,7 +4,6 @@ import TitleAndLinks from "./title-and-links";
 import NavigationBar from "../Navigation/navigation-container";
 
 class JumbotronContainer extends Component {
-  state = {};
   render() {
     return (
       <div id="jumbotron_container">

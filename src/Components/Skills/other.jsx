@@ -16,7 +16,7 @@ class Other extends Component {
       <FontAwesomeIcon
         icon={faGithubSquare}
         size="2x"
-        style={{ color: "#2d2e2e" }}
+        style={{ color: "#919190" }}
       />,
       <FontAwesomeIcon
         icon={faGitlab}
