@@ -12,11 +12,15 @@ class ProjectsContainer extends Component {
     projects: {
       bdoProfit: {
         title: "BDO Profit",
-        liveLink: "http://www.bdoprofit.com",
+        liveLink: "https://www.bdoprofit.com",
         codeLink: "https://github.com/ejwoulfe/BDOProfit",
         image: bdoprofitStatic,
-        description:
-          "BDO Profit is a tool to help calculate a recipe's costs and profits.The database was built using webscraping(from a website that gives permission) and holds all of the games recipes.Each recipe has their own materials.The user will enter in the costs of the materials and the sale price of the recipe once crafted.The website will then calculate if its profitable or not.",
+        description: [
+          "BDO Profit is based off the MMORPG Black Desert Online. The website is a tool for players who need help calculating the costs and profits of an ingame recipe or craft.",
+          "The user searches for their desired recipe, either using the search bar or navigating the professions recipe table/database. Once the desired recipe is found a page will display all the required materials and their quanities.",
+          "The user will enter the costs and the market price of the recipe into the corresponding input fields and the website will do all the calculations for them.",
+          "The database was created via webscraping from a website which allows permission. Each recipe has a name, image, submaterials, and the corresponding quantities."
+        ],
         languages: [
           "HTML",
           "CSS",
@@ -32,18 +36,21 @@ class ProjectsContainer extends Component {
         liveLink: "https://pensive-visvesvaraya-5f7d28.netlify.com/",
         codeLink: "https://github.com/ejwoulfe/lol-champions",
         image: lolchampionsStatic,
-        description1:
-          "This website displays data on the games champions. This data consists of the champions stats, abilities, and skins. All taken from the offical Riot API.",
-        description2:
-          " Other data retrieved from the API include: which champions are free to play this week and which champions are being played the most in a given ranked tier.",
+        description: [
+          "LoL Champions is based off the popular MOBA game, League of Legends. This website is used to help a beginner player get a better understanding of the game and its champions.",
+          "It shows which champions are free that week, which of them are being most played in all tiers, and detailed information about any champion.",
+          "All of this information was retrieved by using the offical Riot API."
+        ],
         languages: ["ReactJS", "React-Router", "APIs", "Bootstrap", "Sass"]
       },
       personalPortfolio: {
         title: "Personal Portfolio",
-        liveLink: "http://edwoulfe.com",
+        liveLink: "https://edwoulfe.com",
         codeLink: "https://github.com/ejwoulfe/personal_portfolio",
         image: personalPortfolioStatic,
-        description: "Personal Website to display all my projects and links.",
+        description: [
+          "This is my own personal website, currently used as a hub for all my projects, a bit about me, and contact information. Currently offered in a light or dark theme, Enjoy!"
+        ],
         languages: ["ReactJS", "Bootstrap", "Sass"]
       }
     }
