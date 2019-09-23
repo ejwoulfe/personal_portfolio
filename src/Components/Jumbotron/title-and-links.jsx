@@ -3,6 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ChangeColorTheme from "./change-color-button";
+import pdf from "../../Assets/Edmond_Woulfe-Resume.pdf";
 
 function TitleAndLinks() {
   return (
@@ -21,7 +22,7 @@ function TitleAndLinks() {
         </span>
         <span>
           <a
-            href="https://github.com/ejwoulfe"
+            href="https://www.linkedin.com/in/edwoulfe/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -30,11 +31,7 @@ function TitleAndLinks() {
           <h5>Linkedin</h5>
         </span>
         <span>
-          <a
-            href="https://github.com/ejwoulfe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={pdf} target="_blank" rel="noopener noreferrer" download>
             <FontAwesomeIcon icon={faFile} size="2x" />
           </a>
           <h5>Resume</h5>
