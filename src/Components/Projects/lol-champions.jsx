@@ -54,18 +54,22 @@ class LolChampionsProject extends Component {
                 className="arrow_down"
                 size="lg"
               />
-              <div
-                id="lol_champions_image"
-                style={{
-                  backgroundImage: `url(${this.props.project.image})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  margin: "auto",
-                  width: "480px",
-                  height: "270px"
-                }}
-                className="website_image_container"
-              />
+              <div className="computer">
+                <div
+                  id="lol_champions_image"
+                  style={{
+                    backgroundImage: `url(${this.props.project.image})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    margin: "auto",
+                    width: "480px",
+                    height: "270px"
+                  }}
+                  className="website_image_container"
+                />
+              </div>
+              <div className="stand"></div>
+              <div className="keyboard"></div>
             </div>
             <div className="col-2 filler_col" />
           </Row>

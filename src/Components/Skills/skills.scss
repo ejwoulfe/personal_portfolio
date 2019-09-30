@@ -9,13 +9,27 @@
 }
 #skills_container {
   text-align: center;
-  padding-top: 55px;
+  padding-top: 175px;
   height: auto;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   position: relative;
+
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
   h1 {
     padding-bottom: 20px;
+    #skills_icon {
+      width: 50px;
+      height: 50px;
+      margin-left: 20px;
+    }
+    #reverse_skills_icon {
+      width: 50px;
+      height: 50px;
+      transform: scaleX(-1);
+      margin-right: 20px;
+    }
   }
   ul {
     list-style-type: none;

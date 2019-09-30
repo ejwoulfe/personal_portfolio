@@ -18,12 +18,15 @@ class ChangeColorTheme extends Component {
   componentDidUpdate() {
     if (this.state.lightTheme) {
       document.getElementsByClassName("App")[0].style.backgroundColor =
-        "#FFFFFF";
+        "#e6f9ff";
       document.getElementsByClassName("App")[0].style.color = "#19171C";
+
       document.getElementById(
         "jumbotron_container"
       ).style.backgroundImage = `url(${lightBackgroundImage})`;
       document.getElementById("jumbotron_container").style.color = "white";
+      document.getElementById("skills_container").style.backgroundColor =
+        "#e6e6e6";
 
       for (var i = 0; i < document.getElementsByClassName("btn").length; i++) {
         document.getElementsByClassName("btn")[i].style.color = "white";
@@ -32,6 +35,8 @@ class ChangeColorTheme extends Component {
     } else {
       document.getElementsByClassName("App")[0].style.backgroundColor =
         "#111820";
+      document.getElementById("skills_container").style.backgroundColor =
+        "transparent";
       document.getElementsByClassName("App")[0].style.color = "#b2123b";
       document.getElementById(
         "jumbotron_container"
@@ -48,9 +53,10 @@ class ChangeColorTheme extends Component {
     document.getElementById(
       "jumbotron_container"
     ).style.backgroundImage = `url(${lightBackgroundImage})`;
-    document.getElementsByClassName("App")[0].style.backgroundColor = "#FFFFFF";
+    document.getElementsByClassName("App")[0].style.backgroundColor = "#e6f9ff";
     document.getElementsByClassName("App")[0].style.color = "#19171C";
-
+    document.getElementById("skills_container").style.backgroundColor =
+      "#e6e6e6";
     for (var k = 0; k < document.getElementsByClassName("btn").length; k++) {
       document.getElementsByClassName("btn")[k].style.color = "white";
       document.getElementsByClassName("btn")[k].style.borderColor = "white";

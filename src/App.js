@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <JumbotronContainer />
       <SkillsContainer />
+
       <ProjectsContainer />
+
       <AboutContainer />
     </div>
   );
