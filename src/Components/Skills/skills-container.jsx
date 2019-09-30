@@ -4,12 +4,27 @@ import { Row } from "react-bootstrap";
 import FrontEnd from "./front-end";
 import BackEnd from "./back-end";
 import Other from "./other";
+import skillsIcon from "../../Assets/cogs-solid.svg";
 
 class SkillsContainer extends Component {
   render() {
     return (
       <div id="skills_container">
-        <h1 className="heading_title">Skills</h1>
+        <h1 className="heading_title">
+          <img
+            id="reverse_skills_icon"
+            className="svg"
+            src={skillsIcon}
+            alt="cog_wheel_icon"
+          />
+          Skills
+          <img
+            id="skills_icon"
+            className="svg"
+            src={skillsIcon}
+            alt="cog_wheel_icon"
+          />
+        </h1>
         <Row id="skills_row">
           <FrontEnd />
           <BackEnd />

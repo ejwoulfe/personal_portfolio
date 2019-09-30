@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -55,8 +56,11 @@ class FrontEnd extends Component {
         id="front_end_container"
         className="language_container col-xs-12 col-md-6 col-lg-4"
       >
-        <h3>Front End</h3>
-        <ul>{listOfLanguages}</ul>
+        <Fade left>
+          <h3>Front End</h3>
+
+          <ul>{listOfLanguages}</ul>
+        </Fade>
       </div>
     );
   }

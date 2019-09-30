@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJira,
@@ -41,8 +42,10 @@ class Other extends Component {
         id="others_container"
         className="language_container col-xs-12 col-md-6 col-lg-4"
       >
-        <h3>Tools</h3>
-        <ul>{listOfLanguages}</ul>
+        <Fade left>
+          <h3>Tools</h3>
+          <ul>{listOfLanguages}</ul>
+        </Fade>
       </div>
     );
   }

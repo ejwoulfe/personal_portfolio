@@ -1,5 +1,6 @@
 #jumbotron_container {
-  height: 600px;
+  height: 800px;
+  background-image: url("../../Assets/code_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -8,7 +9,7 @@
   box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.81);
   #change_theme_button {
     text-decoration: none;
-    background: linear-gradient(to right, #ee90a7 50%, #11182065 50%);
+    background: linear-gradient(to right, #ffffffce 50%, #11182065 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
@@ -23,7 +24,7 @@
     height: 100%;
   }
   #title_container {
-    padding-top: 60px;
+    padding-top: 150px;
     text-align: center;
 
     #code_links_container {

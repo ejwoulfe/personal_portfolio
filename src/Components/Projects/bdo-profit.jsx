@@ -13,12 +13,15 @@ class BdoProfitProject extends Component {
       return <p key={paragraph}>{paragraph}</p>;
     });
     return (
-      <Fade right>
+      <Fade bottom>
         <React.Fragment>
           <Row className="project_rows" id="bdoprofit_row">
             <div className="col-2 filler_col" />
 
-            <div id="second_project_description" className="col-lg-4 col-sm-12">
+            <div
+              id="second_project_description"
+              className="project_container col-lg-4 col-sm-12"
+            >
               <h4>{this.props.project.title}</h4>
               <div className="description_container">{description}</div>
               <div id="buttons_container">
@@ -54,18 +57,22 @@ class BdoProfitProject extends Component {
                 className="arrow_down"
                 size="lg"
               />
-              <div
-                id="bdo_profit_image"
-                className="website_image_container"
-                style={{
-                  backgroundImage: `url(${this.props.project.image})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  margin: "auto",
-                  width: "480px",
-                  height: "270px"
-                }}
-              />
+              <div className="computer">
+                <div
+                  id="bdo_profit_image"
+                  className="website_image_container"
+                  style={{
+                    backgroundImage: `url(${this.props.project.image})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    margin: "auto",
+                    width: "480px",
+                    height: "270px"
+                  }}
+                />
+              </div>
+              <div className="stand"></div>
+              <div className="keyboard"></div>
             </div>
             <div className="col-2 filler_col" />
           </Row>

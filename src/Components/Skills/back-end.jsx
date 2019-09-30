@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhp, faJava } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faSyncAlt } from "@fortawesome/free-solid-svg-icons";
@@ -36,8 +37,10 @@ class BackEnd extends Component {
         id="back_end_container"
         className="language_container col-xs-12 col-md-6 col-lg-4"
       >
-        <h3>Back End</h3>
-        <ul>{listOfLanguages}</ul>
+        <Fade left>
+          <h3>Back End</h3>
+          <ul>{listOfLanguages}</ul>
+        </Fade>
       </div>
     );
   }
