@@ -20,6 +20,8 @@ class ChangeColorTheme extends Component {
       document.getElementById("jumbotron_container").style.color = "white";
       document.getElementById("skills_container").style.backgroundColor =
         "#e6e6e6";
+      document.getElementById("about_container").style.backgroundColor =
+        "#e6e6e6";
       document.getElementsByClassName("btn")[0].style.color = "white";
       document.getElementsByClassName("btn")[0].style.borderColor = "white";
       for (var i = 1; i < document.getElementsByClassName("btn").length; i++) {
@@ -27,6 +29,8 @@ class ChangeColorTheme extends Component {
         document.getElementsByClassName("btn")[i].style.borderColor = "black";
       }
     } else {
+      document.getElementById("about_container").style.backgroundColor =
+        "#1b1e24";
       document.getElementsByClassName("App")[0].style.backgroundColor =
         "#111820";
       document.getElementById("skills_container").style.backgroundColor =

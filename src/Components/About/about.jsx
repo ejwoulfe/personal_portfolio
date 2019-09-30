@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import selfie from "../../Assets/self_image.jpg";
 import "./about.scss";
 
 class About extends Component {
@@ -6,7 +7,10 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="about_description">
+        <div id="picture" className="col-sm-5">
+          <img src={selfie} alt="Me"></img>
+        </div>
+        <div id="about_description" className="col-sm-4">
           <p>
             My name is Ed Woulfe. I am a recent college graduation with a degree
             in Computer Science.

@@ -131,8 +131,17 @@
   }
 }
 @media (max-width: 480px) {
-  .website_image_container {
-    width: 100% !important;
+  .website_image_container,
+  .computer,
+  .keyboard {
+    width: 360px !important;
+  }
+}
+@media (max-width: 320px) {
+  .website_image_container,
+  .computer,
+  .keyboard {
+    width: 320px !important;
   }
 }
 
