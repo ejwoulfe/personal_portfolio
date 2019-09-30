@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./projects.scss";
+import Slide from "react-reveal/Slide";
 import LolChampionsProject from "./lol-champions";
 import BdoProfitProject from "./bdo-profit";
 import PersonalPortfoioProject from "./personal-portfolio";
@@ -58,7 +59,9 @@ class ProjectsContainer extends Component {
   render() {
     return (
       <div id="projects_container">
-        <h1 className="heading_title">Projects</h1>
+        <Slide right>
+          <h1 className="heading_title">Projects</h1>
+        </Slide>
         <LolChampionsProject project={this.state.projects.lolChampions} />
         <BdoProfitProject project={this.state.projects.bdoProfit} />
         <PersonalPortfoioProject

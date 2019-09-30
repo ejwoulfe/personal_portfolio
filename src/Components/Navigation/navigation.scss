@@ -70,6 +70,9 @@
 }
 
 @media (max-width: 830px) {
+  #jumbotron_container {
+    background-position: left;
+  }
   #side_bar_button {
     display: inline !important;
   }

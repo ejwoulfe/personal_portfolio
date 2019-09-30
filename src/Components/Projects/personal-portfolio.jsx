@@ -13,11 +13,14 @@ class PersonalPortfolioProject extends Component {
       return <p key={paragraph}>{paragraph}</p>;
     });
     return (
-      <Fade left>
+      <Fade bottom>
         <React.Fragment>
           <Row className="project_rows" id="personal_portfolio_row">
             <div className="col-2 filler_col" />
-            <div id="third_project_description" className="col-lg-4 col-xs-6">
+            <div
+              id="third_project_description"
+              className="project_container col-lg-4 col-xs-6"
+            >
               <h4>{this.props.project.title}</h4>
               <div className="description_container">{description}</div>
               <div id="buttons_container">

@@ -29,8 +29,8 @@ class NavigationContainer extends Component {
     if (this.state.width < 830) {
       return (
         <React.Fragment>
-          <div id="navigation_container" sticky="top">
-            <Navbar className="col-12">
+          <div id="navigation_container">
+            <Navbar sticky="top" className="col-12">
               <SideBar />
               <Logo />
             </Navbar>

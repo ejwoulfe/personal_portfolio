@@ -13,12 +13,15 @@ class BdoProfitProject extends Component {
       return <p key={paragraph}>{paragraph}</p>;
     });
     return (
-      <Fade right>
+      <Fade bottom>
         <React.Fragment>
           <Row className="project_rows" id="bdoprofit_row">
             <div className="col-2 filler_col" />
 
-            <div id="second_project_description" className="col-lg-4 col-sm-12">
+            <div
+              id="second_project_description"
+              className="project_container col-lg-4 col-sm-12"
+            >
               <h4>{this.props.project.title}</h4>
               <div className="description_container">{description}</div>
               <div id="buttons_container">

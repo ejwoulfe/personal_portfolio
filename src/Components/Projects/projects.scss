@@ -18,13 +18,16 @@
       margin-right: 10px;
       width: 115px;
       text-decoration: none;
-      background: linear-gradient(to right, #ee90a7 50%, #11182065 50%);
+      background: linear-gradient(to right, #ffffffce 50%, #11182065 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease-out;
+
       &:hover {
         box-shadow: inset 0 0 0 2em var(--hover);
         background-position: left bottom;
+        color: black !important;
+        border-color: black !important;
       }
     }
 
@@ -35,19 +38,18 @@
     }
   }
 
-  .description_container {
-    height: 50%;
+  .project_container,
+  .image_col {
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
   }
-  #first_project_description,
-  #second_project_description,
-  #third_project_description {
-    height: 100%;
-  }
+
   .website_image_container {
     border-radius: 10px;
+    background-color: black;
   }
   .computer {
-    background-color: rgb(199, 199, 199);
+    background-color: #666666;
     width: 500px;
     height: 290px;
     padding-top: 10px;
