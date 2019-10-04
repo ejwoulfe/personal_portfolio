@@ -130,18 +130,19 @@
     padding-left: 0px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .website_image_container,
   .computer,
   .keyboard {
-    width: 360px !important;
+    width: 415px !important;
   }
 }
+
 @media (max-width: 320px) {
   .website_image_container,
   .computer,
   .keyboard {
-    width: 320px !important;
+    width: 315px !important;
   }
 }
 
