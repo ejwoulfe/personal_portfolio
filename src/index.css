@@ -38,3 +38,8 @@ h5 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@media (max-width: 330px) {
+  #root {
+    font-size: 12px;
+  }
+}

@@ -11,7 +11,7 @@ import {
 
 class Other extends Component {
   state = {
-    others: ["Jira", "Github", "Gitlab", "Figma", "npm", "Rest API"],
+    others: ["Jira", "Github", "Gitlab", "Figma", "npm"],
     otherIcons: [
       <FontAwesomeIcon icon={faJira} size="2x" style={{ color: "#2680F8" }} />,
       <FontAwesomeIcon
@@ -25,8 +25,7 @@ class Other extends Component {
         style={{ color: "#F59F25" }}
       />,
       <FontAwesomeIcon icon={faFigma} size="2x" style={{ color: "#F86F5F" }} />,
-      <FontAwesomeIcon icon={faNpm} size="2x" style={{ color: "#C63736" }} />,
-      <h5 id="rest_api">{"{ REST }"}</h5>
+      <FontAwesomeIcon icon={faNpm} size="2x" style={{ color: "#C63736" }} />
     ]
   };
 
