@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ChangeColorTheme from "./change-color-button";
-import pdf from "../../Assets/Edmond_Woulfe-Resume.pdf";
+import pdf from "../../Assets/Edmond_Woulfe_Resume.pdf";
 
 function TitleAndLinks() {
   return (
