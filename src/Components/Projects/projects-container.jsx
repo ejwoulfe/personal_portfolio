@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./projects.scss";
 import Slide from "react-reveal/Slide";
-import LolChampionsProject from "./lol-champions";
-import BdoProfitProject from "./bdo-profit";
-import PersonalPortfoioProject from "./personal-portfolio";
+import ProjectsComponent from "./projects-component";
 import lolchampionsStatic from "../../Assets/lol_champions_static.jpg";
 import bdoprofitStatic from "../../Assets/bdo_profit_static.jpg";
 import personalPortfolioStatic from "../../Assets/personal_portfolio_static.jpg";
@@ -62,11 +60,9 @@ class ProjectsContainer extends Component {
         <Slide right>
           <h1 className="heading_title">Projects</h1>
         </Slide>
-        <LolChampionsProject project={this.state.projects.lolChampions} />
-        <BdoProfitProject project={this.state.projects.bdoProfit} />
-        <PersonalPortfoioProject
-          project={this.state.projects.personalPortfolio}
-        />
+        <ProjectsComponent project={this.state.projects.bdoProfit} />
+        <ProjectsComponent project={this.state.projects.lolChampions} />
+        <ProjectsComponent project={this.state.projects.personalPortfolio} />
       </div>
     );
   }
