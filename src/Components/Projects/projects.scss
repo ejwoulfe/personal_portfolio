@@ -46,33 +46,16 @@
 
   .website_image_container {
     border-radius: 10px;
-    background-color: black;
   }
-  .computer {
-    background-color: #666666;
+
+  .video_background {
     width: 500px;
     height: 290px;
     padding-top: 10px;
     border-radius: 15px;
-    -webkit-box-shadow: 4px 5px 3px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 5px 3px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 4px 5px 3px 1px rgba(0, 0, 0, 0.75);
     margin: auto;
-    border: 2px solid black;
   }
 
-  #bdo_profit_image {
-    &:hover {
-    }
-  }
-  #lol_champions_image {
-    &:hover {
-    }
-  }
-  #personal_portfolio_image {
-    &:hover {
-    }
-  }
   .tech_stack {
     h5 {
       margin-top: 25px;

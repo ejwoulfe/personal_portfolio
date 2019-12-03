@@ -3,8 +3,17 @@ import { Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import ModalVideoPlayer from "./modal-video-player";
 
 class ProjectsComponent extends Component {
+  state = {
+    showModal: false
+  };
+
+  toggleModal = () => {
+    this.setState({ showModal: !this.state.showModal });
+  };
+
   render() {
     const builtWithList = this.props.project.languages.map(language => {
       return <li key={language}>{language}</li>;
@@ -54,9 +63,8 @@ class ProjectsComponent extends Component {
                 className="arrow_down"
                 size="lg"
               />
-              <div className="computer">
+              <div className="video_background">
                 <div
-                  id="bdo_profit_image"
                   className="website_image_container"
                   style={{
                     backgroundImage: `url(${this.props.project.image})`,
@@ -66,10 +74,14 @@ class ProjectsComponent extends Component {
                     width: "480px",
                     height: "270px"
                   }}
+                  onClick={this.toggleModal}
                 />
+                <ModalVideoPlayer
+                  open={this.state.showModal}
+                  onClose={this.toggleModal}
+                  videoID={this.props.project.videoID}
+                ></ModalVideoPlayer>
               </div>
-              <div className="stand"></div>
-              <div className="keyboard"></div>
             </div>
             <div className="col-2 filler_col" />
           </Row>

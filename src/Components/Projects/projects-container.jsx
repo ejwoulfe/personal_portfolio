@@ -14,6 +14,7 @@ class ProjectsContainer extends Component {
         liveLink: "https://www.bdoprofit.com",
         codeLink: "https://github.com/ejwoulfe/BDOProfit",
         image: bdoprofitStatic,
+        videoID: "Bwb5D-ILhAQ",
         description: [
           "BDO Profit is based off the MMORPG Black Desert Online. The website is a tool for players who need help calculating the costs and profits of an ingame recipe or craft.",
           "The user searches for their desired recipe, either using the search bar or navigating the professions recipe table/database. Once the desired recipe is found a page will display all the required materials and their quanities.",
@@ -22,10 +23,10 @@ class ProjectsContainer extends Component {
         ],
         languages: [
           "HTML",
-          "CSS",
+          "SASS",
           "Vanilla JS",
+          "JQuery",
           "Bootstrap",
-          "Sass",
           "PHP",
           "MySQL"
         ]
@@ -35,22 +36,24 @@ class ProjectsContainer extends Component {
         liveLink: "https://pensive-visvesvaraya-5f7d28.netlify.com/",
         codeLink: "https://github.com/ejwoulfe/lol-champions",
         image: lolchampionsStatic,
+        videoID: "6Dh-RL__uN4",
         description: [
           "LoL Champions is based off the popular MOBA game, League of Legends. This website is used to help a beginner player get a better understanding of the game and its champions.",
           "It shows which champions are free that week, which of them are being most played in all tiers, and detailed information about any champion.",
           "All of this information was retrieved by using the offical Riot API."
         ],
-        languages: ["ReactJS", "React-Router", "APIs", "Bootstrap", "Sass"]
+        languages: ["ReactJS", "React-Router", "APIs", "Bootstrap", "SCSS"]
       },
       personalPortfolio: {
         title: "Personal Portfolio",
         liveLink: "https://edwoulfe.com",
         codeLink: "https://github.com/ejwoulfe/personal_portfolio",
         image: personalPortfolioStatic,
+        videoID: "cNplZrRSjeI",
         description: [
           "This is my own personal website, currently used as a hub for all my projects, a bit about me, and contact information. Currently offered in a light or dark theme, Enjoy!"
         ],
-        languages: ["ReactJS", "Bootstrap", "Sass"]
+        languages: ["ReactJS", "React Portals", "Bootstrap", "SCSS"]
       }
     }
   };
