@@ -14,7 +14,7 @@ class ProjectsContainer extends Component {
         liveLink: "https://www.bdoprofit.com",
         codeLink: "https://github.com/ejwoulfe/BDOProfit",
         image: bdoprofitStatic,
-        videoID: "Bwb5D-ILhAQ",
+        videoID: "9EjlIWlHb4U",
         description: [
           "BDO Profit is based off the MMORPG Black Desert Online. The website is a tool for players who need help calculating the costs and profits of an ingame recipe or craft.",
           "The user searches for their desired recipe, either using the search bar or navigating the professions recipe table/database. Once the desired recipe is found a page will display all the required materials and their quanities.",
