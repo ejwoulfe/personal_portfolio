@@ -23,8 +23,26 @@ class ChangeColorTheme extends Component {
     document.getElementById("about_container").style.backgroundColor =
       "#e6e6e6";
 
+    // Change border line
+    for (
+      var z = 0;
+      z < document.getElementsByClassName("project_container").length;
+      z++
+    ) {
+      document.getElementsByClassName("project_container")[
+        z
+      ].style.borderBottom = "3px solid black";
+      document.getElementsByClassName("image_col")[z].style.borderBottom =
+        "3px solid black";
+      document.getElementsByClassName("project_title")[z].style.color = "black";
+      document.getElementsByClassName("built_with_title")[z].style.color =
+        "black";
+    }
+
     // Changes the jumbotron button
     document.getElementsByClassName("btn")[0].style.color = "white";
+    document.getElementsByClassName("btn")[0].style.backgroundColor =
+      "transparent";
     document.getElementsByClassName("btn")[0].style.borderColor = "white";
 
     // Changes the svg icons to the light cogwheel
@@ -34,6 +52,8 @@ class ChangeColorTheme extends Component {
     // Changes all other buttons in the application.
     for (var i = 1; i < document.getElementsByClassName("btn").length; i++) {
       document.getElementsByClassName("btn")[i].style.color = "white";
+      document.getElementsByClassName("btn")[i].style.backgroundColor =
+        "#11182065";
       document.getElementsByClassName("btn")[i].style.borderColor = "black";
     }
   }
@@ -49,14 +69,32 @@ class ChangeColorTheme extends Component {
     document.getElementById("about_container").style.backgroundColor =
       "#1b1e24";
 
+    // Change border line
+    for (
+      var z = 0;
+      z < document.getElementsByClassName("project_container").length;
+      z++
+    ) {
+      document.getElementsByClassName("project_container")[
+        z
+      ].style.borderBottom = "3px solid white";
+      document.getElementsByClassName("image_col")[z].style.borderBottom =
+        "3px solid white";
+      document.getElementsByClassName("project_title")[z].style.color = "white";
+      document.getElementsByClassName("built_with_title")[z].style.color =
+        "white";
+    }
+
     // Changes the svg icons to the dark cogwheel
     document.getElementsByClassName("svg")[0].src = skillsIconDark;
     document.getElementsByClassName("svg")[1].src = skillsIconDark;
 
     // Changes all other buttons in the application.
     for (var j = 0; j < document.getElementsByClassName("btn").length; j++) {
-      document.getElementsByClassName("btn")[j].style.borderColor = "#b2123b";
-      document.getElementsByClassName("btn")[j].style.color = "#b2123b";
+      document.getElementsByClassName("btn")[j].style.backgroundColor =
+        "#b2123b";
+      document.getElementsByClassName("btn")[j].style.borderColor = "white";
+      document.getElementsByClassName("btn")[j].style.color = "white";
     }
   }
 

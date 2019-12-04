@@ -38,6 +38,12 @@ h5 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.modal-video-close-btn {
+  transition-duration: 0.5s;
+}
+.modal-video-close-btn:hover {
+  transform: scale(0.75);
+}
 @media (max-width: 330px) {
   #root {
     font-size: 12px;

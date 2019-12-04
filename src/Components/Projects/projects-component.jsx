@@ -28,7 +28,7 @@ class ProjectsComponent extends Component {
             <div className="col-2 filler_col" />
 
             <div className="project_container col-lg-4 col-sm-12">
-              <h4>{this.props.project.title}</h4>
+              <h4 className="project_title">{this.props.project.title}</h4>
               <div className="description_container">{description}</div>
               <div id="buttons_container">
                 <a
@@ -49,7 +49,7 @@ class ProjectsComponent extends Component {
                 </a>
               </div>
               <div className="tech_stack">
-                <h5>Built with:</h5>
+                <h5 className="built_with_title">Built with:</h5>
                 <ul>{builtWithList}</ul>
               </div>
             </div>

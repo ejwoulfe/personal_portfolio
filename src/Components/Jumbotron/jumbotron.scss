@@ -17,6 +17,7 @@
     &:hover {
       box-shadow: inset 0 0 0 2em var(--hover);
       background-position: left bottom;
+      color: black !important;
     }
   }
   #overlay {

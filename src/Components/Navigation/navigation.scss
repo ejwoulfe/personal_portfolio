@@ -3,6 +3,9 @@
   min-height: 100px;
   display: inline-flex;
   width: 100%;
+  #logo {
+    font-size: 30px;
+  }
 
   #side_bar_button {
     transform: scale(1.5);
@@ -27,6 +30,9 @@
 
       li {
         padding: 20px;
+
+        font-size: 20px;
+
         &:hover {
           cursor: pointer;
           color: #ee90a7;
@@ -58,6 +64,7 @@
       margin-right: 0px;
       white-space: nowrap;
       text-align: left;
+
       li {
         margin-top: 15px;
         margin-bottom: 15px;
