@@ -53,14 +53,6 @@
     }
   }
 
-  .video_background {
-    width: 500px;
-    height: 290px;
-    padding-top: 10px;
-    border-radius: 15px;
-    margin: auto;
-  }
-
   .tech_stack {
     h5 {
       margin-top: 25px;
@@ -118,11 +110,6 @@
 @media (max-width: 400px) {
   .website_image_container {
     width: 300px !important;
-  }
-}
-@media (max-width: 330px) {
-  .image_col {
-    display: none;
   }
 }
 
