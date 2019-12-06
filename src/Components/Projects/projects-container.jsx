@@ -36,7 +36,7 @@ class ProjectsContainer extends Component {
         liveLink: "https://pensive-visvesvaraya-5f7d28.netlify.com/",
         codeLink: "https://github.com/ejwoulfe/lol-champions",
         image: lolchampionsStatic,
-        videoID: "6Dh-RL__uN4",
+        videoID: "H2eQ5N1Q3NM",
         description: [
           "LoL Champions is based off the popular MOBA game, League of Legends. This website is used to help a beginner player get a better understanding of the game and its champions.",
           "It shows which champions are free that week, which of them are being most played in all tiers, and detailed information about any champion.",
@@ -49,7 +49,7 @@ class ProjectsContainer extends Component {
         liveLink: "https://edwoulfe.com",
         codeLink: "https://github.com/ejwoulfe/personal_portfolio",
         image: personalPortfolioStatic,
-        videoID: "cNplZrRSjeI",
+        videoID: "D4Jte3h3Sr4",
         description: [
           "This is my own personal website, currently used as a hub for all my projects, a bit about me, and contact information. Currently offered in a light or dark theme, Enjoy!"
         ],
