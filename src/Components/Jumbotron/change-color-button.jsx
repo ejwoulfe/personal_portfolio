@@ -23,6 +23,9 @@ class ChangeColorTheme extends Component {
     document.getElementById("about_container").style.backgroundColor =
       "#e6e6e6";
 
+    // Change hamburger color
+    document.getElementById("search_icon").style.color = "white";
+
     // Change border line
     for (
       var z = 0;
@@ -62,6 +65,9 @@ class ChangeColorTheme extends Component {
     document.getElementsByClassName("App")[0].style.backgroundColor = "#111820";
     document.getElementsByClassName("App")[0].style.color = "#b2123b";
     document.getElementById("jumbotron_container").style.color = "#b2123b";
+
+    // Change hamburger color
+    document.getElementById("search_icon").style.color = "#b2123b";
 
     // Changes background colors of some containers.
     document.getElementById("skills_container").style.backgroundColor =
