@@ -1,16 +1,6 @@
 # Personal Portfolio
-This is my personal portfolio website.
+This is my older version of my personal portfolio.
 
-It can be found at edwoulfe.com, it is currently live.
- 
- ### Installing
- None required, the website is live at https://edwoulfe.com/
- 
- ## Built With
- 
- Front End:
- ReactJS, Sass, Bootstrap
- 
- ## Video Explaining the Project
- 
- https://www.youtube.com/watch?v=D4Jte3h3Sr4
+An updated version can be found at https://github.com/ejwoulfe/personal_portfolio_revamp
+
+The website is live at https://edwoulfe.com
